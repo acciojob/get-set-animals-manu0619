@@ -1,7 +1,6 @@
-// Base class: Animal
 class Animal {
   constructor(species) {
-    this._species = species;
+    this._species = species; // Private field for species
   }
 
   // Getter for species
@@ -9,9 +8,9 @@ class Animal {
     return this._species;
   }
 
-  // Method to make a sound
+  // Method to make a generic sound
   makeSound() {
-    console.log(`${this.species} makes a sound.`);
+    console.log(`The ${this.species} makes a sound`);
   }
 }
 
@@ -30,9 +29,6 @@ class Dog extends Animal {
     console.log("woof");
   }
 }
-
-
-
 // Do not change the code below this line
 window.Animal = Animal;
 window.Dog = Dog;
